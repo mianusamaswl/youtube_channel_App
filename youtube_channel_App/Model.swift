@@ -7,7 +7,14 @@
 
 import Foundation
 
+protocol ModelDelegate {
+    func videosFetched(_ videos:[Video])
+}
+
+
 class Model {
+
+    var delegate:ModelDelegate?
     
     func getVideos() {
         
@@ -36,7 +43,16 @@ class Model {
                 // here the in the below line the Response is the class name we made and data is the parameter of the above dataTask constant
                let response = try  decoder.decode(Response.self, from: data!)
                 
-                dump(response)
+                
+                DispatchQueue.main.async {
+                    if response.items != nil {
+                         // Call the "videosFetched" method of the delegate
+                         self.delegate?.videosFetched(response.items!)
+                         }
+                }
+               
+                
+                //dump(response)
             }
             catch {
                 
