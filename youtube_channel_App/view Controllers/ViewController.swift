@@ -13,7 +13,7 @@ class ViewController:
     @IBOutlet weak var tableView: UITableView!
     
     var model = Model()
-    var videos = [Video]()
+    var videos = [Video]() 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +43,11 @@ class ViewController:
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath) as! VideoTableViewCell
         
         // Configure the cell with data
-        
-        // Get the title for the video in question
-        let title = self.videos[indexPath.row].title
-        
-        cell.textLabel?.text = title
+        let video = self.videos[indexPath.row]
+        cell.setCell(video)
         
         return cell
     }
