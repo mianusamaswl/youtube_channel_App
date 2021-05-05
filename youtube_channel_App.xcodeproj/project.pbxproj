@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E5C080E2643449200CB5D36 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C080D2643449200CB5D36 /* CacheManager.swift */; };
+		8E5C081026434F1700CB5D36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C080F26434F1700CB5D36 /* DetailViewController.swift */; };
 		8E7320D226431D7A0079F12A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7320D126431D7A0079F12A /* VideoTableViewCell.swift */; };
 		8E8C2F5A2640959400750FD5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C2F592640959400750FD5 /* Constants.swift */; };
 		8E8C2F5C2640993100750FD5 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C2F5B2640993100750FD5 /* Video.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		8E5C080D2643449200CB5D36 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		8E5C080F26434F1700CB5D36 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8E7320D126431D7A0079F12A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		8E8C2F592640959400750FD5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E8C2F5B2640993100750FD5 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				8EEC2CB8263F016A0007FD94 /* ViewController.swift */,
+				8E5C080F26434F1700CB5D36 /* DetailViewController.swift */,
 			);
 			path = "view Controllers";
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				8EEC2CB7263F016A0007FD94 /* SceneDelegate.swift in Sources */,
 				8E8C2F5E264099E900750FD5 /* Model.swift in Sources */,
 				8E7320D226431D7A0079F12A /* VideoTableViewCell.swift in Sources */,
+				8E5C081026434F1700CB5D36 /* DetailViewController.swift in Sources */,
 				8E8C2F5A2640959400750FD5 /* Constants.swift in Sources */,
 				8E8C2F5C2640993100750FD5 /* Video.swift in Sources */,
 			);
